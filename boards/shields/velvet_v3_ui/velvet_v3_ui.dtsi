@@ -53,7 +53,7 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)                  RC(2,6) RC(2,7)
         status = "disabled";
         compatible = "pixart,pmw3610";
         reg = <0>;
-        spi-max-frequency = <1000000>;
+        spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 15 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         cpi = <1000>;
         evt-type = <INPUT_EV_REL>;
