@@ -1,0 +1,6 @@
+#include "velvet_v3_ui.dtsi"
+
+&trackball_listener {
+    status = "okay";
+    device = <&trackball>;
+};

@@ -1,3 +1,9 @@
+config SHIELD_VELVET_V3_LEFT_DONGLE
+    def_bool $(shields_list_contains,velvet_v3_left_dongle)
+
+config SHIELD_VELVET_V3_DONGLE
+    def_bool $(shields_list_contains,velvet_v3_dongle)
+
 config SHIELD_VELVET_V3_LEFT
     def_bool $(shields_list_contains,velvet_v3_left)
 

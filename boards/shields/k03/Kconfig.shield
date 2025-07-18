@@ -1,3 +1,9 @@
+config SHIELD_K03_LEFT_DONGLE
+    def_bool $(shields_list_contains,k03_left_dongle)
+
+config SHIELD_K03_DONGLE
+    def_bool $(shields_list_contains,k03_dongle)
+
 config SHIELD_K03_LEFT
     def_bool $(shields_list_contains,k03_left)
 
