@@ -1,0 +1,11 @@
+config SHIELD_SPRAWL_LEFT_QUBE
+    def_bool $(shields_list_contains,sprawl_left_qube)
+
+config SHIELD_SPRAWL_QUBE
+    def_bool $(shields_list_contains,sprawl_qube)
+
+config SHIELD_SPRAWL_LEFT
+    def_bool $(shields_list_contains,sprawl_left)
+
+config SHIELD_SPRAWL_RIGHT
+    def_bool $(shields_list_contains,sprawl_right)

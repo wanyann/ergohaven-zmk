@@ -1,0 +1,19 @@
+if SHIELD_IMPERIAL44_QUBE || SHIELD_IMPERIAL44_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "EH Imperial44"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_IMPERIAL44_QUBE || SHIELD_IMPERIAL44_LEFT_QUBE || SHIELD_IMPERIAL44_LEFT || SHIELD_IMPERIAL44_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+config ZMK_POINTING
+    default y
+
+endif

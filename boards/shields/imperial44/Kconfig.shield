@@ -1,0 +1,11 @@
+config SHIELD_IMPERIAL44_LEFT_QUBE
+    def_bool $(shields_list_contains,imperial44_left_qube)
+
+config SHIELD_IMPERIAL44_QUBE
+    def_bool $(shields_list_contains,imperial44_qube)
+
+config SHIELD_IMPERIAL44_LEFT
+    def_bool $(shields_list_contains,imperial44_left)
+
+config SHIELD_IMPERIAL44_RIGHT
+    def_bool $(shields_list_contains,imperial44_right)

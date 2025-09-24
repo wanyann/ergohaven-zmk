@@ -1,0 +1,19 @@
+if SHIELD_SPRAWL_QUBE || SHIELD_SPRAWL_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "EH Sprawl"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_SPRAWL_QUBE || SHIELD_SPRAWL_LEFT_QUBE || SHIELD_SPRAWL_LEFT || SHIELD_SPRAWL_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+config ZMK_POINTING
+    default y
+
+endif
