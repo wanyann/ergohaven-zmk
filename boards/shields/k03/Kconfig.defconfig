@@ -1,7 +1,7 @@
 if SHIELD_K03_QUBE || SHIELD_K03_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "K:03"
+    default "EH K:03 v4"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
