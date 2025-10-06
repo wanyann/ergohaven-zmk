@@ -5,15 +5,6 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
-    behaviors {
-        enc_vol: enc_vol {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "ENC_VOL";
-            #sensor-binding-cells = <0>;
-            bindings = <&kp C_VOL_UP>, <&kp C_VOL_DN>;
-        };
-    };
-
     combos {
         compatible = "zmk,combos";
 
@@ -111,8 +102,6 @@
 &kp LSHFT  &kp RU_CYRILLIC_YA       &kp RU_CYRILLIC_CHE   &kp RU_CYRILLIC_ES  &kp RU_CYRILLIC_EM  &kp RU_CYRILLIC_I   &kp RU_CYRILLIC_HA    &kp RU_CYRILLIC_HARD_SIGN  &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE   &kp RU_CYRILLIC_YU     &kp RU_DOT           &kp RSHFT
                                                                               &kp LCTRL           &mo 2               &kp SPACE             &kp ENTER                  &mo 3               &kp RCTRL
             >;
-
-            sensor-bindings = <&enc_vol>, <&enc_vol>;
         };
 
         nav {
