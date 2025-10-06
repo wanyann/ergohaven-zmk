@@ -5,15 +5,6 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
-    behaviors {
-        enc_vol: enc_vol {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "ENC_VOL";
-            #sensor-binding-cells = <0>;
-            bindings = <&kp C_VOL_UP>, <&kp C_VOL_DN>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -26,7 +17,9 @@
             >;
 
             display-name = "Base";
-            sensor-bindings = <&enc_vol>, <&enc_vol>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp PG_UP PG_DN>;
         };
 
         nav {
