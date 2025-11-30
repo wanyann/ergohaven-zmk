@@ -14,6 +14,9 @@ manifest:
       revision: eh
     - name: ergohaven-zmk-qube
       remote: ergohaven
+      revision: eh
+    - name: zmk-raw-hid
+      remote: ergohaven
       revision: main
   self:
     path: config
