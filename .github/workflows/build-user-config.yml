@@ -177,15 +177,3 @@ jobs:
         with:
           name: artifact-${{ env.artifact_name }}
           path: ${{ env.build_dir }}/artifacts
-
-  merge:
-    runs-on: ubuntu-latest
-    needs: build
-    name: Merge Output Artifacts
-    steps:
-      - name: Merge Artifacts
-        uses: actions/upload-artifact/merge@v4
-        with:
-          name: ${{ inputs.archive_name }}
-          pattern: artifact-*
-          delete-merged: true
