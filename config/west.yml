@@ -1,7 +1,7 @@
 manifest:
   remotes:
     - name: zmkfirmware
-      url-base: https://github.com/wanyann
+      url-base: https://github.com/zmkfirmware
     - name: ergohaven
       url-base: https://github.com/ergohaven
     - name: kot149
@@ -11,7 +11,7 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: hold-tap-fix
+      revision: main
       import: app/west.yml
     - name: zmk-pmw3610-driver
       remote: ergohaven
