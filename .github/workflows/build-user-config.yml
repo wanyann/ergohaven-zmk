@@ -78,6 +78,7 @@ jobs:
         env:
           board: ${{ matrix.board }}
           shield: ${{ matrix.shield }}
+          keymap: ${{ matrix.keymap }}
           artifact_name: ${{ matrix.artifact-name }}
           snippet: ${{ matrix.snippet }}
         run: |
@@ -86,6 +87,10 @@ jobs:
             new_tmp_dir="${TMPDIR:-/tmp}/zmk-config"
             mkdir -p "${new_tmp_dir}"
             echo "base_dir=${new_tmp_dir}" >> $GITHUB_ENV
+            if [ -n "${keymap}" ]; then
+              keymap_args="-DKEYMAP_FILE=\"${new_tmp_dir}/config/${keymap}.keymap\""
+              echo "keymap_args=${keymap_args}" >> $GITHUB_ENV
+            fi
           else
             echo "base_dir=${GITHUB_WORKSPACE}" >> $GITHUB_ENV
           fi
