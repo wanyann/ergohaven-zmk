@@ -4,6 +4,8 @@ manifest:
       url-base: https://github.com/wanyann
     - name: ergohaven
       url-base: https://github.com/ergohaven
+    - name: wanyann
+      url-base: https://github.com/wanyann
     - name: kot149
       url-base: https://github.com/kot149
     - name: hsgw
@@ -17,7 +19,7 @@ manifest:
       remote: ergohaven
       revision: eh
     - name: ergohaven-zmk-qube
-      remote: ergohaven
+      remote: wanyann
       revision: eh
     - name: zmk-raw-hid
       remote: ergohaven
