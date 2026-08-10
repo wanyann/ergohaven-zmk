@@ -10,6 +10,8 @@ manifest:
       url-base: https://github.com/kot149
     - name: hsgw
       url-base: https://github.com/hsgw
+    - name: badjeff
+      url-base: https://github.com/badjeff
   projects:
     - name: zmk
       remote: wanyann
@@ -30,5 +32,8 @@ manifest:
     - name: zmk-feature-sensor_rotation
       remote: hsgw
       revision: e1a0186220ade99220d04dadf9735b758cfdf086
+    - name: zmk-behavior-mouse-key-toggle
+      remote: badjeff
+      revision: main
   self:
     path: config
