@@ -70,14 +70,14 @@
 };
 
 &spi0 {
-    status = "okay";
+    status = "disabled";
 };
 
 &trackball {
-    status = "okay";
+    status = "disabled";
 };
 
 &trackball_listener {
-    status = "okay";
+    status = "disabled";
     device = <&trackball>;
 };
